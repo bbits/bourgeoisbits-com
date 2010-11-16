@@ -32,8 +32,8 @@
 
 body
 {
-    font-size: 13pt;
-    line-height: 18pt;
+    font-size: 14pt;
+    line-height: 19pt;
     font-family: local-myriad-pro;
     background-color: #fff;
     color: #222;
@@ -42,7 +42,8 @@ body
 pre
 {
     font-family: local-inconsolata;
-    font-size: 12pt;
+    font-size: 14pt;
+    line-height: 19pt;
     padding: 1em;
     background-color: #f3f3f3;
     overflow: auto;
@@ -51,7 +52,7 @@ pre
 .pre
 {
     font-family: local-inconsolata;
-    font-size: 12pt;
+    font-size: 14pt;
     color: #005;
 }
 
@@ -91,7 +92,7 @@ em
 
 h1, h2, h3, h4, h5
 {
-    font-family: "Helvetica Neue";
+    font-family: local-myriad-pro;
 }
 
 h1
@@ -129,7 +130,7 @@ h3 .pre
 
 strong
 {
-    font-family: "Helvetica Neue";
+    font-family: local-myriad-pro;
 }
 
 .versionmodified
