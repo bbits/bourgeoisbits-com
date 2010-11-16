@@ -159,7 +159,7 @@ table.docutils
     border: 0 !important;
     background-color: #f3f3f3;
     border-spacing: 0;
-    padding: 0.25em;
+    margin: 2em;
     font-family: local-inconsolata;
     font-weight: normal;
     color: #005;
@@ -170,6 +170,12 @@ table.docutils th.head
     font-family: Baskerville;
     font-weight: bold;
     color: #222;
+}
+
+table.docutils th, table.docutils td
+{
+    padding: 0.5em;
+    font-size: 0.8em;
 }
 
 a, a:hover, a:visited, a .pre
