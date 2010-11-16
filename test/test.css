@@ -1,5 +1,19 @@
 /* Potential CSS for python documentation */
 
+/* Import a CSS reset to make things sane... and then recover from it. */
+
+@import url("./reset-min.css");
+
+p, h1, h2, h3, h4, h5, h6, dd, dt, pre, .pre { margin-bottom: 1em; }
+
+h1, h2, h3, h4, h5, h6 { font-weight: bold; padding-top: 0.5em;}
+
+body { margin-top: 1.5em; margin-bottom: 2em; }
+
+dd { margin-left: 1.5em; margin-right: 1.5em; }
+
+/* Here's the real CSS */
+
 .related 
 {
     display: none;
@@ -59,7 +73,7 @@ pre
 
 .document
 {
-    width: 650px;
+    width: 678px;
     margin: 0 auto;
 }
 
@@ -75,7 +89,7 @@ dt:target, .highlight
 
 .admonition.warning, .admonition.note
 {
-    width: 85%;
+    width: 86%;
     margin: 2em auto;
     background: #f3f3f3;
     padding: 0.5em;
@@ -132,6 +146,7 @@ h3 .pre
 strong
 {
     font-family: local-myriad-pro;
+    font-weight: bold;
 }
 
 .versionmodified
@@ -187,9 +202,9 @@ dl > dt:first-child, dl > dt:first-child > *
 {
     font-family: local-inconsolata !important;
     font-style: normal !important;
-    font-size: 0.95em !important;
+    font-size: 1.0em !important;
     color: #005 !important;
-    line-height: 0.95em !important;
+    line-height: 1.0em !important;
 }
 
 /* CONSIDER leaving this on so table of contents is available at bottom of documents */
