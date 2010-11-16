@@ -16,11 +16,25 @@
     src: url('./Inconsolata.otf');
 }
 
+@font-face
+{
+    font-family: local-myriad-pro;
+    font-weight: normal;
+    src: url('./MyriadPro-Regular.otf');
+}
+
+@font-face
+{
+    font-family: local-myriad-pro;
+    font-weight: bold;
+    src: url('./MyriadPro-Semibold.otf');
+}
+
 body
 {
     font-size: 13pt;
     line-height: 18pt;
-    font-family: Baskerville;
+    font-family: local-myriad-pro;
     background-color: #fff;
     color: #222;
 }
@@ -28,7 +42,7 @@ body
 pre
 {
     font-family: local-inconsolata;
-    font-size: 11pt;
+    font-size: 12pt;
     padding: 1em;
     background-color: #f3f3f3;
     overflow: auto;
@@ -37,7 +51,7 @@ pre
 .pre
 {
     font-family: local-inconsolata;
-    font-size: 11pt;
+    font-size: 12pt;
     color: #005;
 }
 
@@ -149,7 +163,6 @@ a, a:hover, a:visited, a .pre
 a .pre
 {
     font-size: 1.0000025em;
-    font-size: 12pt;
 }
 
 tt
@@ -165,12 +178,21 @@ big
     color: #005;
 }
 
-dl.method > dt:first-child, dl.method > dt:first-child > *, 
+/*dl.method > dt:first-child, dl.method > dt:first-child > *, 
 dl.function > dt:first-child, dl.function > dt.first-child > *
+*/
+dl > dt:first-child, dl > dt:first-child > *
 {
     font-family: local-inconsolata !important;
     font-style: normal !important;
-    font-size: 1.0em !important;
+    font-size: 0.95em !important;
     color: #005 !important;
-    line-height: 1.0em !important;
+    line-height: 0.95em !important;
+}
+
+/* CONSIDER leaving this on so table of contents is available at bottom of documents */
+
+.sphinxsidebarwrapper
+{
+    display: none;
 }
