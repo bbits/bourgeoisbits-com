@@ -1,0 +1,176 @@
+/* Potential CSS for python documentation */
+
+.related 
+{
+    display: none;
+}
+
+.footer
+{
+    display: none;
+}
+
+@font-face 
+{
+    font-family: local-inconsolata;
+    src: url('./Inconsolata.otf');
+}
+
+body
+{
+    font-size: 13pt;
+    line-height: 18pt;
+    font-family: Baskerville;
+    background-color: #fff;
+    color: #222;
+}
+
+pre
+{
+    font-family: local-inconsolata;
+    font-size: 11pt;
+    padding: 1em;
+    background-color: #f3f3f3;
+    overflow: auto;
+}
+
+.pre
+{
+    font-family: local-inconsolata;
+    font-size: 11pt;
+    color: #005;
+}
+
+.document
+{
+    width: 650px;
+    margin: 0 auto;
+}
+
+a.headerlink
+{
+    display: none;
+}
+
+dt:target, .highlight
+{
+    background-color: #fbe54e;
+}
+
+.admonition.warning, .admonition.note
+{
+    width: 85%;
+    margin: 2em auto;
+    background: #f3f3f3;
+    padding: 0.5em;
+}
+
+.admonition-title
+{
+    font-weight: bold;
+}
+
+em
+{
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5
+{
+    font-family: "Helvetica Neue";
+}
+
+h1
+{
+    font-size: 1.25em;
+    line-height: 1.25em;
+}
+
+h1 .pre
+{
+    font-size: 1.025em !important;
+}
+
+h2
+{
+    font-size: 1.075em;
+    line-height: 1.075em;
+}
+
+h2 .pre
+{
+    font-size: 1.025em !important;
+}
+
+h3
+{
+    font-size: 1.0025em;
+    line-height: 1.0025em;
+}
+
+h3 .pre
+{
+    font-size: 1.025em !important;
+}
+
+strong
+{
+    font-family: "Helvetica Neue";
+}
+
+.versionmodified
+{
+    color: green;
+}
+
+table.docutils
+{
+    border: 0 !important;
+    background-color: #f3f3f3;
+    border-spacing: 0;
+    padding: 0.25em;
+    font-family: local-inconsolata;
+    font-weight: normal;
+    color: #005;
+}
+
+table.docutils th.head
+{
+    font-family: Baskerville;
+    font-weight: bold;
+    color: #222;
+}
+
+a, a:hover, a:visited, a .pre
+{
+    color: #008;
+}
+
+a .pre
+{
+    font-size: 1.0000025em;
+    font-size: 12pt;
+}
+
+tt
+{
+    font-family: local-inconsolata;
+    color: #005;
+}
+
+big
+{
+    font-family: local-inconsolata;
+    font-size: 0.9em;
+    color: #005;
+}
+
+dl.method > dt:first-child, dl.method > dt:first-child > *, 
+dl.function > dt:first-child, dl.function > dt.first-child > *
+{
+    font-family: local-inconsolata !important;
+    font-style: normal !important;
+    font-size: 1.0em !important;
+    color: #005 !important;
+    line-height: 1.0em !important;
+}
