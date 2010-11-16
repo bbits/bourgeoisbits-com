@@ -46,7 +46,7 @@ pre
     line-height: 19pt;
     padding: 1em;
     background-color: #f3f3f3;
-    overflow: auto;
+    overflow: scroll;
 }
 
 .pre
