@@ -4,15 +4,19 @@
 
 @import url("./reset-min.css");
 
-p, h1, h2, h3, h4, h5, h6, dd, dt, pre, .pre { margin-bottom: 1em; }
+p, h1, h2, h3, h4, h5, h6, dd, dt, pre, .pre, ul, ol { margin-bottom: 1em; }
 
 h1, h2, h3, h4, h5, h6 { font-weight: bold; padding-top: 0.5em;}
 
-body { margin-top: 1.5em; margin-bottom: 2em; }
+body { margin-top: 1.5em; margin-bottom: 2em; background-color: red; }
+
+ol li { list-style: decimal; margin-left: 2.5em; }
+
+ul.simple li { list-style: disc; margin-left: 2.5em; }
 
 dd { margin-left: 1.5em; margin-right: 1.5em; }
 
-li { margin-left: 1.5em; }
+li { margin-left: 1.5em; margin-bottom: 1em; }
 
 /* Here's the real CSS */
 
@@ -26,7 +30,7 @@ li { margin-left: 1.5em; }
     display: none;
 }
 
-/*@font-face 
+@font-face 
 {
     font-family: local-inconsolata;
     src: url('./Inconsolata.otf');
@@ -45,19 +49,19 @@ li { margin-left: 1.5em; }
     font-weight: bold;
     src: url('./MyriadPro-Semibold.otf');
 }
-*/
+
 body
 {
     font-size: 14pt;
     line-height: 19pt;
-    font-family: Myriad Pro;
+    font-family: local-myriad-pro;
     background-color: #fff;
     color: #222;
 }
 
 pre
 {
-    font-family: Inconsolata;
+    font-family: local-inconsolata;
     font-size: 14pt;
     line-height: 19pt;
     padding: 1em;
@@ -68,12 +72,12 @@ pre
 
 .pre
 {
-    font-family: Inconsolata;
+    font-family: local-inconsolata;
     font-size: 14pt;
     color: #005;
 }
 
-.document
+.document, div#bd
 {
     width: 678px;
     margin: 0 auto;
@@ -87,6 +91,11 @@ a.headerlink
 dt:target, .highlight
 {
     background-color: #fbe54e;
+}
+
+div#hd, div#ft, div#comments, div#highlight-floater
+{
+    display: none;
 }
 
 .admonition.warning, .admonition.note
@@ -109,7 +118,7 @@ em
 
 h1, h2, h3, h4, h5
 {
-    font-family: Myriad Pro;
+    font-family: local-myriad-pro;
 }
 
 h1
@@ -147,7 +156,7 @@ h3 .pre
 
 strong
 {
-    font-family: Myriad Pro;
+    font-family: local-myriad-pro;
     font-weight: bold;
 }
 
@@ -162,7 +171,7 @@ table.docutils
     background-color: #f3f3f3;
     border-spacing: 0;
     margin: 2em;
-    font-family: Inconsolata;
+    font-family: local-inconsolata;
     font-weight: normal;
     color: #005;
 }
@@ -192,13 +201,13 @@ a .pre
 
 tt
 {
-    font-family: Inconsolata;
+    font-family: local-inconsolata;
     color: #005;
 }
 
 big
 {
-    font-family: Inconsolata;
+    font-family: local-inconsolata;
     font-size: 0.9em;
     color: #005;
 }
@@ -208,7 +217,7 @@ dl.function > dt:first-child, dl.function > dt.first-child > *
 */
 dl > dt:first-child, dl > dt:first-child > *
 {
-    font-family: Inconsolata !important;
+    font-family: local-inconsolata !important;
     font-style: normal !important;
     font-size: 1.0em !important;
     color: #005 !important;
