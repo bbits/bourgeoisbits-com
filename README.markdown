@@ -1,5 +1,7 @@
 Bourgeois Bits Web Site
 =======================
 
-If you're reading this, you've found your way to the `gh-pages` branch and therefore to our web pages!
+This is the website for Bourgeois Bits LLC, http://bourgeoisbits.com/
+
+Nothing too exciting here.
 
